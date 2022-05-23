@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFF9F5F5">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:id="@+id/activitymainLinearLayout1"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:padding="10dp"
+			android:gravity="center"
+			android:background="@drawable/card"
+			android:elevation="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Your Balance:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#FFF2EEEE"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="$"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textColor="#FFFFFFFF"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="200"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textStyle="bold"
+					android:textColor="#FFFFFFFF"
+					android:id="@+id/balanceText"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="85dp"
+			android:layout_marginTop="10dp"
+			android:background="#FFFFFFFF">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Income"
+					android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#FF7CBE35"
+					android:id="@+id/totalIncomeTxt"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Expense"
+					android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#FFFF0000"
+					android:id="@+id/totalExpenseTxt"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Recent Transaction"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="10dp"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Name:"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginRight="10dp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="None"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/recentName"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Type:"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginRight="10dp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="None"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/recentType"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Value:"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginRight="10dp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="None"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/recentValue"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:text="View History"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/cta_btn"
+			android:textColor="#FFFFFFFF"
+			android:layout_gravity="center"
+			android:id="@+id/viewHistoryBtn"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:ignoreGravity="@id/activitymainLinearLayout1"
+		android:layout_gravity="bottom|right"
+		android:elevation="10dp">
+
+		<Button
+			android:layout_width="65dp"
+			android:layout_height="65dp"
+			android:text="+"
+			android:id="@+id/showAddModal"
+			android:background="@drawable/add_btn"
+			android:textColor="#FFFFFFFF"
+			android:layout_marginBottom="10dp"
+			android:textSize="25sp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
