@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="left|center">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="15dp"
+			android:layout_height="match_parent"
+			android:background="#FFC02F2F"
+			android:id="@+id/item_type"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Camera"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="10dp"
+			android:id="@+id/item_name"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:gravity="right|center"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/item_value"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
