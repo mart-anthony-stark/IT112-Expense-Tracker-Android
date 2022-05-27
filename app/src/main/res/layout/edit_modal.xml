@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Transaction name"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginBottom="10dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="text"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="eg. Bank Loan, Shopping"
+			android:id="@+id/editName"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Description"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginBottom="10dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="text"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/editDesc"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Transaction type"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginBottom="10dp"/>
+
+		<RadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/EditTypeRadioGrp"
+			android:orientation="horizontal"
+			android:layout_marginLeft="20dp">
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="Income"
+				android:text="Income"
+				android:layout_marginRight="10dp"
+				android:id="@+id/editIncome"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="Expense"
+				android:text="Expense"
+				android:id="@+id/editExpense"/>
+
+		</RadioGroup>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Value"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginBottom="10dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="number"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/editValue"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="SAVE"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFFFF"
+			android:background="@drawable/cta_btn"
+			android:layout_marginRight="10dp"
+			android:id="@+id/editSaveBtn"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="CANCEL"
+			android:layout_weight="1"
+			android:id="@+id/editCancelBtn"
+			android:background="@drawable/reg_btn"
+			android:textColor="#FFFFFFFF"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
